@@ -34,10 +34,14 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        run: |
+          mkdir -p artifact
+          cp -r * artifact/
+      - name: Upload artifact (manual)
+        uses: actions/upload-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          name: github-pages
+          path: artifact
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
