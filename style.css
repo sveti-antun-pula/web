@@ -40,11 +40,19 @@ hr {
   z-index: 99;
 }
 
+.holiday-block {
+  margin: 0.36em 0em 2.14em 0em;
+  text-align: Center;
+  line-height: 2.11267605633803;
+  font-family: "Roboto", "Arial";
+  font-weight: 300;
+}
+
 /*----------- */
 
 .ttr_image::after {
   clear: both;
-  content: '.';
+  content: ".";
   display: inline;
   height: 0;
   visibility: hidden;
@@ -74,22 +82,21 @@ p {
   height: auto;
 }
 
-@media only screen and (min-width : 150px) and (max-width : 1024px) {
-
+@media only screen and (min-width: 150px) and (max-width: 1024px) {
   footer,
   header#ttr_header {
     width: 100%;
   }
 }
 
-@media (min-width : 992px) {
+@media (min-width: 992px) {
   .container {
     max-width: 100%;
   }
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background: rgba(255, 255, 255, 1);
   background-clip: padding-box;
   margin: 0;
@@ -106,7 +113,7 @@ body {
   border: solid rgba(0, 0, 0, 1);
   border-width: 0px 0px 0px 0px;
   box-shadow: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background: rgba(255, 255, 255, 1);
   background-clip: padding-box;
   box-sizing: border-box;
@@ -135,7 +142,7 @@ body {
   height: 85px;
   min-height: 85px;
   border-radius: 0px 0px 0px 0px;
-  border: solid #E7E7E7;
+  border: solid #e7e7e7;
   border: solid rgba(231, 231, 231, 1);
   border-width: 1px 0px 1px 0px;
   box-shadow: none;
@@ -342,7 +349,7 @@ body {
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   background: rgba(243, 243, 243, 1);
   background-clip: padding-box;
   padding-top: 80px;
@@ -411,7 +418,7 @@ body {
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   background: rgba(243, 243, 243, 1);
   background-clip: padding-box;
   padding-top: 0px;
@@ -668,7 +675,7 @@ body {
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   background: rgba(243, 243, 243, 1);
   background-clip: padding-box;
   padding-top: 80px;
@@ -712,7 +719,7 @@ body {
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   background: rgba(243, 243, 243, 1);
   background-clip: padding-box;
   padding-top: 20px;
@@ -727,7 +734,7 @@ body {
   border: solid rgba(255, 255, 255, 0);
   border-width: 0px 0px 0px 0px;
   box-shadow: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background: rgba(255, 255, 255, 1);
   background-clip: padding-box;
   margin-top: 15px;
@@ -752,7 +759,7 @@ body {
   border: solid rgba(255, 255, 255, 0);
   border-width: 0px 0px 0px 0px;
   box-shadow: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background: rgba(255, 255, 255, 1);
   background-clip: padding-box;
   margin-top: 15px;
@@ -777,7 +784,7 @@ body {
   border: solid rgba(255, 255, 255, 0);
   border-width: 0px 0px 0px 0px;
   box-shadow: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background: rgba(255, 255, 255, 1);
   background-clip: padding-box;
   margin-top: 15px;
@@ -818,7 +825,6 @@ body {
   -o-transform: rotate(0deg);
   box-sizing: border-box;
   word-wrap: break-word;
-
 }
 
 .ttr_headershape01,
@@ -850,7 +856,6 @@ body {
   text-align: left;
   display: block;
   z-index: 500;
-
 }
 
 .ttr_menushape1,
@@ -926,11 +931,11 @@ body {
 }
 
 .navbar-default {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background: rgba(255, 255, 255, 1);
   background-clip: padding-box;
   border-radius: 0px 0px 0px 0px;
-  border: solid #E7E7E7;
+  border: solid #e7e7e7;
   border: solid rgba(231, 231, 231, 1);
   border-width: 1px 0px 1px 0px;
   box-shadow: none;
@@ -942,14 +947,13 @@ body {
   padding-left: 125px;
   padding-right: 125px;
   padding-bottom: 0px;
-  box-sizing: content-box
+  box-sizing: content-box;
 }
 
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width: 768px) {
   .container {
     overflow: visible !important;
   }
-
 }
 
 .nav.ttr_menu_items li a.ttr_menu_items_parent_link {
@@ -990,7 +994,7 @@ body {
   font-family: "Abel", "Arial";
   font-weight: 400;
   font-style: normal;
-  color: #B99E7B;
+  color: #b99e7b;
   text-shadow: none;
   text-align: left;
   text-decoration: none;
@@ -1012,7 +1016,7 @@ body {
   font-family: "Abel", "Arial";
   font-weight: 400;
   font-style: normal;
-  color: #B99E7B;
+  color: #b99e7b;
   text-shadow: none;
   text-align: left;
   text-decoration: none;
@@ -1044,7 +1048,7 @@ body {
   font-family: "Abel", "Arial";
   font-weight: 400;
   font-style: normal;
-  color: #B99E7B;
+  color: #b99e7b;
   text-shadow: none;
   text-align: left;
   text-decoration: none;
@@ -1071,13 +1075,13 @@ body {
 
 header#ttr_header {
   background: url(images/back.jpg);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: Center Center;
   background-clip: padding-box;
   border-radius: 0px 0px 0px 0px;
-  border: solid #E7E7E7;
+  border: solid #e7e7e7;
   border: solid rgba(231, 231, 231, 1);
   border-width: 0px 0px 0px 0px;
   box-shadow: none;
@@ -1088,7 +1092,6 @@ header#ttr_header {
   height: 670px;
   width: auto;
   box-sizing: content-box;
-
 }
 
 header#ttr_header {
@@ -1097,7 +1100,6 @@ header#ttr_header {
 
 nav#ttr_menu {
   width: auto;
-
 }
 
 .container {
@@ -1106,11 +1108,11 @@ nav#ttr_menu {
 
 footer {
   position: relative;
-  background-color: #1B1E23;
+  background-color: #1b1e23;
   background: rgba(27, 30, 35, 1);
   background-clip: padding-box;
   border-radius: 0px 0px 0px 0px;
-  border: solid #DCDCDC;
+  border: solid #dcdcdc;
   border: solid rgba(220, 220, 220, 1);
   border-width: 1px 0px 0px 0px;
   box-shadow: none;
@@ -1129,7 +1131,7 @@ footer {
   font-family: "Roboto", "Arial";
   font-weight: 400;
   font-style: normal;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: left;
   text-decoration: none;
   top: 111.5px;
@@ -1156,7 +1158,7 @@ footer {
   font-family: "Roboto", "Arial";
   font-weight: 400;
   font-style: normal;
-  color: #D2B48C;
+  color: #d2b48c;
   text-align: left;
   text-decoration: none;
 }
@@ -1192,7 +1194,7 @@ footer {
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background: rgba(255, 255, 255, 1);
   background-clip: padding-box;
   box-sizing: border-box;
@@ -1216,12 +1218,12 @@ hr {
   font-family: "Roboto", "Arial";
   font-weight: 400;
   font-style: normal;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: left;
   text-decoration: none;
   text-transform: none;
   border-radius: 0px 0px 0px 0px;
-  border: solid #CCCCCC;
+  border: solid #cccccc;
   border: solid rgba(204, 204, 204, 1);
   border-width: 0px 0px 0px 0px;
   box-shadow: none;
@@ -1232,24 +1234,24 @@ hr {
   font-family: "Roboto", "Arial";
   font-weight: 400;
   font-style: normal;
-  color: #FFFFFF;
+  color: #ffffff;
   text-shadow: none;
   text-align: left;
   text-decoration: none;
   text-transform: none;
   border-radius: 0px 0px 0px 0px;
-  border: solid #FFFFFF;
+  border: solid #ffffff;
   border: solid rgba(255, 255, 255, 1);
   border-width: 0px 0px 0px 0px;
   box-shadow: none;
 }
 
 .btn-default {
-  background-color: #B99E7B;
+  background-color: #b99e7b;
   background: rgba(185, 158, 123, 1);
   background-clip: padding-box;
   border-radius: 0px 0px 0px 0px;
-  border: solid #CCCCCC;
+  border: solid #cccccc;
   border: solid rgba(204, 204, 204, 1);
   border-width: 0px 0px 0px 0px;
   box-shadow: none;
@@ -1265,19 +1267,19 @@ hr {
 }
 
 .btn-info {
-  background-color: #D2B48C;
+  background-color: #d2b48c;
   background: rgba(210, 180, 140, 1);
   background-clip: padding-box;
   color: #000000;
-  border-color: #46B8DA;
+  border-color: #46b8da;
 }
 
 .btn-info:hover {
   background-color: #000000;
   background: rgba(0, 0, 0, 1);
   background-clip: padding-box;
-  color: #FFFFFF;
-  border-color: #ADADAD;
+  color: #ffffff;
+  border-color: #adadad;
 }
 
 .btn-sm,
@@ -1293,7 +1295,7 @@ hr {
 .btn-default:hover,
 a.btn-default:hover {
   border-radius: 0px 0px 0px 0px;
-  border: solid #FFFFFF;
+  border: solid #ffffff;
   border: solid rgba(255, 255, 255, 1);
   border-width: 0px 0px 0px 0px;
   box-shadow: none;
@@ -1306,7 +1308,7 @@ a.btn-default:hover {
   font-family: "Roboto", "Arial";
   font-weight: 400;
   font-style: normal;
-  color: #FFFFFF;
+  color: #ffffff;
   text-shadow: none;
   text-align: left;
   text-decoration: none;
@@ -1322,11 +1324,11 @@ TemplateToaster Version:6.0.0.10633
 }
 */
 
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width: 767px) {
   #ttr_menu.navbar {
     height: 85px;
     border-radius: 0px 0px 0px 0px;
-    border: solid #E7E7E7;
+    border: solid #e7e7e7;
     border: solid rgba(231, 231, 231, 1);
     border-width: 1px 0px 1px 0px;
     box-shadow: none;
@@ -1334,7 +1336,7 @@ TemplateToaster Version:6.0.0.10633
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-width : 150px) and (max-width : 767px) {
+@media only screen and (min-width: 150px) and (max-width: 767px) {
   #ttr_header_inner {
     width: auto !important;
     text-align: center !important;
@@ -1352,7 +1354,6 @@ TemplateToaster Version:6.0.0.10633
 
   #navigationmenu .navbar-header {
     position: relative;
-
   }
 
   .ttr_menu_items .horiz_separator {
@@ -1440,7 +1441,7 @@ TemplateToaster Version:6.0.0.10633
   font-family: "Abel", "Arial";
   font-weight: 400;
   font-style: normal;
-  color: #B99E7B;
+  color: #b99e7b;
   text-shadow: none;
   text-align: left;
   text-decoration: none;
@@ -1465,7 +1466,7 @@ TemplateToaster Version:6.0.0.10633
 }
 
 /* Small Tabs (portrait and landscape) ----------- */
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   #ttr_header_inner {
     width: 100% !important;
   }
@@ -1594,7 +1595,7 @@ TemplateToaster Version:6.0.0.10633
   }
 }
 
-@media only screen and (min-width : 150px) and (max-width : 1024px) {
+@media only screen and (min-width: 150px) and (max-width: 1024px) {
   .ttr_footer_bottom_footer_inner {
     width: 100% !important;
     text-align: center;
@@ -1606,8 +1607,7 @@ TemplateToaster Version:6.0.0.10633
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
-
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   #ttr_header_inner {
     width: 100% !important;
   }
@@ -1622,15 +1622,13 @@ TemplateToaster Version:6.0.0.10633
   }
 }
 
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
-
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .totopshow {
     display: block;
   }
 
   .container {
     width: 100%;
-
   }
 
   .ttr_footer_bottom_footer_inner {
@@ -1872,7 +1870,6 @@ TemplateToaster Version:6.0.0.10633
     -o-transform: rotate(0deg);
     box-sizing: border-box;
     word-wrap: break-word;
-
   }
 
   .ttr_headershape01,
@@ -1895,7 +1892,6 @@ TemplateToaster Version:6.0.0.10633
     text-align: left;
     display: block;
     z-index: 500;
-
   }
 
   .ttr_menushape1,
@@ -1963,7 +1959,7 @@ TemplateToaster Version:6.0.0.10633
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 0px;
-    box-sizing: content-box
+    box-sizing: content-box;
   }
 
   .nav.ttr_menu_items li a.ttr_menu_items_parent_link {
@@ -1995,13 +1991,11 @@ TemplateToaster Version:6.0.0.10633
 
   nav#ttr_menu {
     max-width: 100%;
-
   }
 
   header#ttr_header {
     height: 470px;
     box-sizing: content-box;
-
   }
 
   .ttr_footer_bottom_footer {
@@ -2072,15 +2066,13 @@ TemplateToaster Version:6.0.0.10633
   }
 }
 
-@media only screen and (max-width : 767px) {
-
+@media only screen and (max-width: 767px) {
   .totopshow {
     display: block;
   }
 
   .container {
     width: 100%;
-
   }
 
   .ttr_footer_bottom_footer_inner {
@@ -2446,7 +2438,6 @@ TemplateToaster Version:6.0.0.10633
     -o-transform: rotate(0deg);
     box-sizing: border-box;
     word-wrap: break-word;
-
   }
 
   .ttr_headershape01,
@@ -2468,7 +2459,6 @@ TemplateToaster Version:6.0.0.10633
     text-align: left;
     display: block;
     z-index: 500;
-
   }
 
   .ttr_menushape1,
@@ -2549,7 +2539,7 @@ TemplateToaster Version:6.0.0.10633
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 0px;
-    box-sizing: content-box
+    box-sizing: content-box;
   }
 
   .nav.ttr_menu_items li a.ttr_menu_items_parent_link {
@@ -2561,7 +2551,7 @@ TemplateToaster Version:6.0.0.10633
   }
 
   .ttr_menu_items li:hover a.ttr_menu_items_parent_link {
-    background-color: #F3F3F3;
+    background-color: #f3f3f3;
     background: rgba(243, 243, 243, 1);
     background-clip: padding-box;
   }
@@ -2572,13 +2562,13 @@ TemplateToaster Version:6.0.0.10633
     box-sizing: border-box;
     height: 50px;
     line-height: 50px;
-    background-color: #F3F3F3;
+    background-color: #f3f3f3;
     background: rgba(243, 243, 243, 1);
     background-clip: padding-box;
   }
 
   .nav.ttr_menu_items li.active:hover a.ttr_menu_items_parent_link_active {
-    background-color: #F3F3F3;
+    background-color: #f3f3f3;
     background: rgba(243, 243, 243, 1);
     background-clip: padding-box;
   }
@@ -2590,13 +2580,11 @@ TemplateToaster Version:6.0.0.10633
 
   nav#ttr_menu {
     max-width: 100%;
-
   }
 
   header#ttr_header {
     height: 350px;
     box-sizing: content-box;
-
   }
 
   .ttr_footer_bottom_footer {
@@ -2608,7 +2596,7 @@ TemplateToaster Version:6.0.0.10633
     font-family: "Roboto", "Arial";
     font-weight: 400;
     font-style: normal;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: left;
     text-decoration: none;
     top: 75px;
@@ -2637,7 +2625,7 @@ TemplateToaster Version:6.0.0.10633
     font-family: "Roboto", "Arial";
     font-weight: 400;
     font-style: normal;
-    color: #D2B48C;
+    color: #d2b48c;
     text-align: left;
     text-decoration: none;
   }
@@ -2650,43 +2638,39 @@ TemplateToaster Version:6.0.0.10633
 
   .nav.navbar-nav li.ttr_menu_items_parent a {
     margin-bottom: 0px;
-
   }
 
   ul.ttr_menu_items {
     padding-top: 0 !important;
-
   }
 
-  #ttr_menu .navbar-toggle {}
+  #ttr_menu .navbar-toggle {
+  }
 
   #ttr_menu .navbar-toggle {
     border-radius: 0;
     padding: 9px 7px;
     margin-right: 3px;
     float: right;
-
   }
 
   #ttr_menu .navbar-toggle:hover,
   #ttr_menu .navbar-toggle:focus {
     margin-right: 3px;
     float: right;
-
   }
 
   #ttr_menu .navbar-toggle,
   #ttr_menu .navbar-toggle:hover,
-  #ttr_menu .navbar-toggle:focus {}
+  #ttr_menu .navbar-toggle:focus {
+  }
 
   #ttr_menu.navbar {
     height: auto !important;
-
   }
 
   #ttr_menu .navbar-nav {
     margin: 0;
-
   }
 
   .ttr_menu_items li a.ttr_menu_items_parent_link {
@@ -2701,7 +2685,7 @@ TemplateToaster Version:6.0.0.10633
     display: block;
     cursor: pointer;
     box-sizing: border-box;
-    background-color: #F3F3F3;
+    background-color: #f3f3f3;
     background: rgba(243, 243, 243, 1);
     background-clip: padding-box;
     padding-top: 0px;
