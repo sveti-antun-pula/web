@@ -54,3 +54,65 @@ if (!easterStr) {
     if (el) el.textContent = formatDate(date);
   });
 }
+
+const christmasVisibilityRanges = [
+  {
+    year: 2024,
+    from: new Date("2024-12-23"),
+    to: new Date("2025-01-12"),
+  },
+  {
+    year: 2025,
+    from: new Date("2025-12-23"),
+    to: new Date("2026-01-11"),
+  },
+  {
+    year: 2026,
+    from: new Date("2026-12-23"),
+    to: new Date("2027-01-10"),
+  },
+  {
+    year: 2027,
+    from: new Date("2027-12-23"),
+    to: new Date("2028-01-09"),
+  },
+  {
+    year: 2028,
+    from: new Date("2028-12-23"),
+    to: new Date("2029-01-07"),
+  },
+];
+
+const isChristmasVisible = christmasVisibilityRanges.some(({ from, to }) => {
+  return now >= from && now <= to;
+});
+
+const container = document.getElementById("christmas-schedule");
+if (container) container.style.display = isChristmasVisible ? "block" : "none";
+
+const dateMap = {
+  "badnjak-date": "2024-12-24",
+  "bozic-date": "2024-12-25",
+  "stjepan-date": "2024-12-26",
+  "sveta-obitelj-date": "2024-12-29",
+  "stara-godina-date": "2024-12-31",
+  "nova-godina-date": "2025-01-01",
+  "druga-nedjelja-date": "2025-01-05",
+  "bogojavljenje-date": "2025-01-06",
+  "krstenje-gospodinovo-date": "2025-01-12",
+};
+
+const format = (dateStr) => {
+  const d = new Date(dateStr);
+  return d.toLocaleDateString("hr-HR", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+};
+
+Object.entries(dateMap).forEach(([id, dateStr]) => {
+  const el = document.getElementById(id);
+  if (el) el.textContent = format(dateStr);
+});
