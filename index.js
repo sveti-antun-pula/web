@@ -17,7 +17,7 @@ if (!easterStr) {
   const oneDay = 86400000;
 
   const visibleFrom = new Date(easter.getTime() - 8 * oneDay); // Saturday before Cvjetnica
-  const visibleTo = new Date(easter.getTime() + 2 * oneDay); // Tuesday after Uskrs
+  const visibleTo = new Date(easter.getTime() + 6 * oneDay); // Tuesday after Uskrs
   const isVisible = now >= visibleFrom && now <= visibleTo;
 
   document.getElementById("easter-schedule").style.display = isVisible
