@@ -91,15 +91,15 @@ const container = document.getElementById("christmas-schedule");
 if (container) container.style.display = isChristmasVisible ? "block" : "none";
 
 const dateMap = {
-  "badnjak-date": "2024-12-24",
-  "bozic-date": "2024-12-25",
-  "stjepan-date": "2024-12-26",
-  "sveta-obitelj-date": "2024-12-29",
-  "stara-godina-date": "2024-12-31",
-  "nova-godina-date": "2025-01-01",
-  "druga-nedjelja-date": "2025-01-05",
-  "bogojavljenje-date": "2025-01-06",
-  "krstenje-gospodinovo-date": "2025-01-12",
+  "badnjak-date": "2025-12-24",
+  "bozic-date": "2025-12-25",
+  "stjepan-date": "2025-12-26",
+  "sveta-obitelj-date": "2025-12-28",
+  "stara-godina-date": "2025-12-31",
+  "nova-godina-date": "2026-01-01",
+  "druga-nedjelja-date": "2026-01-04",
+  "bogojavljenje-date": "2026-01-06",
+  "krstenje-gospodinovo-date": "2026-01-12",
 };
 
 const format = (dateStr) => {
