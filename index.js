@@ -64,7 +64,7 @@ const christmasVisibilityRanges = [
   {
     year: 2025,
     from: new Date("2025-12-23"),
-    to: new Date("2026-01-12"),
+    to: new Date("2026-01-11"),
   },
   {
     year: 2026,
@@ -98,9 +98,8 @@ const dateMap = {
   "stara-godina-date": "2025-12-31",
   "nova-godina-date": "2026-01-01",
   "druga-nedjelja-date": "2026-01-04",
-  "blagoslov-vode-date": "2026-01-05",
   "bogojavljenje-date": "2026-01-06",
-  "krstenje-date": "2026-01-11",
+  "krstenje-gospodinovo-date": "2026-01-12",
 };
 
 const format = (dateStr) => {
