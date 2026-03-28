@@ -117,37 +117,15 @@ Object.entries(dateMap).forEach(([id, dateStr]) => {
   if (el) el.textContent = format(dateStr);
 });
 
-const korizmaVisibilityRanges = [
-  {
-    year: 2024,
-    from: new Date("2024-02-14"), // Ash Wednesday
-    to: new Date("2024-03-30"), // Holy Saturday
-  },
-  {
-    year: 2025,
-    from: new Date("2025-03-05"),
-    to: new Date("2025-04-19"),
-  },
-  {
-    year: 2026,
-    from: new Date("2026-02-18"),
-    to: new Date("2026-04-04"),
-  },
-  {
-    year: 2027,
-    from: new Date("2027-02-10"),
-    to: new Date("2027-03-27"),
-  },
-  {
-    year: 2028,
-    from: new Date("2028-03-01"),
-    to: new Date("2028-04-15"),
-  },
-];
-
-const isKorizmaVisible = korizmaVisibilityRanges.some(({ from, to }) => {
-  return now >= from && now <= to;
-});
+// Korizma: from Ash Wednesday (Easter - 46 days) to Saturday before Cvjetnica (Easter - 8 days)
+let isKorizmaVisible = false;
+if (easterStr) {
+  const easter = new Date(easterStr);
+  const oneDay = 86400000;
+  const korizmaFrom = new Date(easter.getTime() - 46 * oneDay);
+  const korizmaTo = new Date(easter.getTime() - 8 * oneDay);
+  isKorizmaVisible = now >= korizmaFrom && now <= korizmaTo;
+}
 
 const korizmaBlock = document.getElementById("korizma-schedule");
 if (korizmaBlock) {
