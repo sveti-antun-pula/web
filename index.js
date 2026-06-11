@@ -10,6 +10,12 @@ const now = new Date();
 const currentYear = now.getFullYear();
 const easterStr = easterDatesByYear[currentYear];
 
+const plakat2026 = document.getElementById("plakat-2026");
+if (plakat2026) {
+  const plakat2026VisibleUntil = new Date(2026, 5, 14);
+  plakat2026.style.display = now < plakat2026VisibleUntil ? "inline" : "none";
+}
+
 if (!easterStr) {
   console.warn("Easter date not defined for year", currentYear);
 } else {
