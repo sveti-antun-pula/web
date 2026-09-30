@@ -2775,18 +2775,23 @@ TemplateToaster Version:6.0.0.10633
 .parish-topic-title { display: block; font-size: 18px; font-weight: 500; line-height: 1.4; color: #303e34; }
 .parish-topic-description { display: block; margin-top: 5px; font-size: 13px; line-height: 1.5; color: #6b7065; }
 .parish-topic-toggle {
-  position: relative;
-  flex: 0 0 26px;
-  height: 26px;
-  border: 1px solid #dfdfd5;
-  border-radius: 50%;
-  color: #637450;
+  flex-shrink: 0;
+  color: #51663f;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
 }
-.parish-topic-toggle::before,
-.parish-topic-toggle::after { content: ""; position: absolute; background: currentColor; }
-.parish-topic-toggle::before { width: 10px; height: 1px; top: 12px; left: 7px; }
-.parish-topic-toggle::after { width: 1px; height: 10px; top: 7px; left: 12px; }
-.parish-info details[open] .parish-topic-toggle::after { display: none; }
+.parish-topic-more, .parish-topic-close { align-items: center; gap: 6px; }
+.parish-topic-more { display: inline-flex; }
+.parish-topic-close { display: none; }
+.parish-topic-toggle span[aria-hidden] { font-size: 20px; line-height: 1; }
+.parish-info details[open] .parish-topic-more { display: none; }
+.parish-info details[open] .parish-topic-close { display: inline-flex; }
+@media (max-width: 1100px) {
+  .parish-info summary { display: grid; grid-template-columns: 44px minmax(0, 1fr); column-gap: 12px; row-gap: 8px; }
+  .parish-info summary > .parish-topic-icon { align-self: start; }
+  .parish-topic-toggle { grid-column: 2; }
+}
 .parish-info details[open] > summary { border-radius: 12px 12px 0 0; background: #f6f8f2; border-bottom: 1px solid #e6eadd; }
 .parish-info-body { max-width: 780px; margin: 0 auto; padding: 4px 28px 28px; }
 .parish-info h3 { margin: 26px 0 10px; font-size: 17px; font-weight: 600; line-height: 1.4; color: #303e34; }
