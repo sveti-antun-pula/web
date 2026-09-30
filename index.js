@@ -1,3 +1,15 @@
+// Open a topic when following a direct link, including browser back/forward.
+function openParishTopic() {
+  const topic = document.getElementById(window.location.hash.slice(1));
+  if (topic && topic.matches(".parish-info details")) {
+    topic.open = true;
+    requestAnimationFrame(() => topic.scrollIntoView({ block: "start" }));
+  }
+}
+
+window.addEventListener("hashchange", openParishTopic);
+openParishTopic();
+
 const easterDatesByYear = {
   2024: "2024-03-31",
   2025: "2025-04-20",
