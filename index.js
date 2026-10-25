@@ -10,6 +10,32 @@ function openParishTopic() {
 window.addEventListener("hashchange", openParishTopic);
 openParishTopic();
 
+// Summer/winter times. The HTML holds the summer (ljetno) times; elements
+// with data-winter show that value instead while Croatia is on winter time
+// (zimsko računanje vremena). EU rule: summer time runs from the last Sunday
+// of March to the last Sunday of October, switching at 01:00 UTC. Using UTC
+// keeps the result correct whatever time zone the visitor's device is in.
+function lastSundayUtc(year, monthIndex) {
+  const lastDay = new Date(Date.UTC(year, monthIndex + 1, 0, 1));
+  lastDay.setUTCDate(lastDay.getUTCDate() - lastDay.getUTCDay());
+  return lastDay;
+}
+
+function isCroatianSummerTime(date) {
+  const year = date.getUTCFullYear();
+  return date >= lastSundayUtc(year, 2) && date < lastSundayUtc(year, 9);
+}
+
+function applySeasonalTimes(date) {
+  const summer = isCroatianSummerTime(date);
+  document.querySelectorAll("[data-winter]").forEach((el) => {
+    if (!el.dataset.summer) el.dataset.summer = el.textContent;
+    el.textContent = summer ? el.dataset.summer : el.dataset.winter;
+  });
+}
+
+applySeasonalTimes(new Date());
+
 const easterDatesByYear = {
   2024: "2024-03-31",
   2025: "2025-04-20",
